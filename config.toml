@@ -1,0 +1,4 @@
+baseURL = 'https://jessejes.com'
+languageCode = 'en-us'
+title = 'jessejes'
+theme = "nostyleplease"
