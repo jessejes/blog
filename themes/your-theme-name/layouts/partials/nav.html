@@ -1,9 +1,9 @@
-<header class="site-header">
-  <nav class="site-nav">
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }}  
-      <a href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-    </ul>
-  </nav>
-</header>
+<nav class="main-navigation">
+  <ul class="main-navigation-list">
+    <a href="/">home</a>
+    {{ $currentPage := . }}
+    {{ range.Site.Menus.main }}  
+    <a class="active" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </ul>
+</nav>

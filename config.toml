@@ -4,18 +4,11 @@ title = 'jessejes'
 theme = "your-theme-name"
 
 [menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name = "home"
-    url = "/"
-
   [[menu.main]]
     identifier = "about"
     name = "about"
     url = "/about"
-
   [[menu.main]]
     identifier = "blog"
     name = "blog"
-    url = "/blog"
+    url = "/blogs"
