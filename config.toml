@@ -1,7 +1,7 @@
 baseURL = 'https://jessejes.com'
 languageCode = 'en-us'
 title = 'jessejes'
-theme = "your-theme-name"
+theme = "hugo-papermod-custom"
 
 [menu]
   [[menu.main]]
