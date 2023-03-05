@@ -12,31 +12,38 @@
     .container {
 
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
+        justify-content: center;
+        width: 100%;
 
-        max-width: 768px;
+        .inner {
 
-        .avatar {
-
-            display: flex;
-
-            border-radius: 100%;
-            border: 2px solid $secondary-color;
-            
-            img {
-                border: 2px solid transparent;
-                border-radius: 100%;
-            }
-        }
-
-        .description {
-            
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 25px;
+            max-width: 320px;
+            min-width: 320px;
+    
+            .avatar {
+    
+                display: flex;
+                justify-content: center;
+                border-radius: 100%;
+                border: 2px solid $secondary-color;
+                
+                img {
+                    border: 2px solid transparent;
+                    border-radius: 100%;
+                }
+            }
+    
+            .description {
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
         }
     }
 }

@@ -16,14 +16,16 @@ export default function Home() {
       <div className={styles.home}>
         <Navbar />
         <div className={styles.container}>
-          <div className={styles.avatar}>
-            <Image src="/avatar.jpg" alt="Avatar" width={102} height={102} />
+          <div className={styles.inner}>
+            <div className={styles.avatar}>
+              <Image src="/avatar.jpg" alt="Avatar" width={102} height={102} />
+            </div>
+            <div className={styles.description}>
+              <h1>jessejes</h1>
+              <p>Keep it simple :)</p>
+            </div>
+            <Button text="more about me" href="/about" />
           </div>
-          <div className={styles.description}>
-            <h1>jessejes</h1>
-            <p>Keep it simple :)</p>
-          </div>
-          <Button text="more about me" href="/about" />
         </div>
         <Footer />
       </div>
