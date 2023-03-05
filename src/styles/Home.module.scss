@@ -1,0 +1,42 @@
+@import 'vars.module.scss';
+
+.home {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100vh;
+    padding: 0 25px;
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        max-width: 768px;
+
+        .avatar {
+
+            display: flex;
+
+            border-radius: 100%;
+            border: 2px solid $secondary-color;
+            
+            img {
+                border: 2px solid transparent;
+                border-radius: 100%;
+            }
+        }
+
+        .description {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
