@@ -19,7 +19,7 @@ export default function Blogs(props: BlogsProps) {
     return (
         <>
             {props.blogs.map((blog) => (
-                <Link href={`blogs/${blog.slug}`}>{blog.title}</Link>
+                <Link key={blog.slug} href={`blogs/${blog.slug}`}>{blog.title}</Link>
             ))}
         </>
     )
