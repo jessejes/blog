@@ -18,7 +18,7 @@ function loadBlogsFromDirectory(): Blog[] {
     })
 }
 
-function loadSpecificBlog(slug: string | string[] | undefined) {
+function loadSpecificBlog(slug: string) {
 
     console.log(`${contentPath}/blogs/${slug}.md`)
 

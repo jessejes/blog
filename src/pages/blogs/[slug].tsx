@@ -15,14 +15,10 @@ export async function getStaticPaths() {
     }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-
-    if (params == undefined)
-        throw new Error("Variable 'params' is undefined")
-
+export async function getStaticProps({ params: { slug }}) {
     return {
         props: {
-            blog: loadSpecificBlog(params.slug)
+            blog: loadSpecificBlog(slug)
         }
     }
 }
