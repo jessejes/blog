@@ -1,18 +1,12 @@
 @import 'vars.module.scss';
 
 .home {
-    
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    padding: 0 25px;
+    justify-content: center;
+    align-items: center;
 
     .container {
-
-        display: flex;
-        justify-content: center;
-        width: 100%;
 
         .inner {
 
