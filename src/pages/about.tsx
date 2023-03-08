@@ -16,10 +16,5 @@ export async function getStaticProps() {
 }
 
 export default function About(props: AboutProps) {
-    return (
-        <>
-            <Navbar />
-            {convertMarkdownToHTML(props.content.content)}
-        </>
-    )
+    return (convertMarkdownToHTML(props.content.content))
 }

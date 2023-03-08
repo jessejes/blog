@@ -14,7 +14,6 @@ export default function Home() {
         <link rel="icon" href="/avatar.jpg" />
       </Head>
       <div className={styles.home}>
-        <Navbar />
         <div className={styles.container}>
           <div className={styles.inner}>
             <div className={styles.avatar}>
@@ -27,7 +26,6 @@ export default function Home() {
             <Button text="more about me" href="/about" />
           </div>
         </div>
-        <Footer />
       </div>
     </>
   )
