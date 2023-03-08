@@ -1,7 +1,5 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
-import styles from "@/styles/Layout.module.scss"
-
 
 interface LayoutProps { 
     children: JSX.Element
@@ -9,10 +7,12 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
     return (
-        <div className={styles.layout}>
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <div className={styles.content}>
-                {props.children}
+            <div className="flex justify-center flex-grow">
+                <div className="max-w-lg">
+                    {props.children}
+                </div>
             </div>
             <Footer />
         </div>
