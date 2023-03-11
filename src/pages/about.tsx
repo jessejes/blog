@@ -1,7 +1,7 @@
-import Navbar from "@/components/navbar";
 import MarkdownContent from "@/types/markdown-content";
 import { loadContentFromMarkdown } from "@/utils/content";
 import { convertMarkdownToHTML } from "@/utils/markdown";
+import Head from "next/head";
 
 interface AboutProps {
     content: MarkdownContent
@@ -16,5 +16,15 @@ export async function getStaticProps() {
 }
 
 export default function About(props: AboutProps) {
-    return (convertMarkdownToHTML(props.content.content))
+    return (
+        
+        <>
+            <Head>
+                <title>About</title>
+                <link rel="icon" href="/avatar.jpg" />
+            </Head>
+            {convertMarkdownToHTML(props.content.content)}
+        </>   
+        
+    )
 }
