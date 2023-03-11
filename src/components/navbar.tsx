@@ -6,8 +6,8 @@ export default function Navbar() {
     const router = useRouter()
 
     return (
-        <nav className="navbar">
-            <div className="navbar-items">
+        <nav className="flex justify-start items-center h-16 mx-6">
+            <div className="flex gap-3">
                <NavbarItem title="Home"
                     href="/"
                     currentPage={router.pathname} />
@@ -30,6 +30,6 @@ interface NavbarItemProps {
 
 function NavbarItem(props: NavbarItemProps) {
     return (
-        <Link className={props.currentPage === props.href ? "active" : ""} href={props.href}>{props.title}</Link>
+        <Link className={props.currentPage === props.href ? "underline" : ""} href={props.href}>{props.title}</Link>
     )
 }

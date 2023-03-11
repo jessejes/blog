@@ -4,8 +4,6 @@ import Footer from '@/components/footer'
 import Button from '@/components/button'
 import Image from 'next/image'
 
-import styles from '@/styles/Home.module.scss'
-
 export default function Home() {
   return (
     <>
@@ -13,19 +11,13 @@ export default function Home() {
         <title>jessejes | Home</title>
         <link rel="icon" href="/avatar.jpg" />
       </Head>
-      <div className={styles.home}>
-        <div className={styles.container}>
-          <div className={styles.inner}>
-            <div className={styles.avatar}>
-              <Image src="/avatar.jpg" alt="Avatar" width={102} height={102} />
-            </div>
-            <div className={styles.description}>
-              <h1>jessejes</h1>
-              <p>Keep it simple :)</p>
-            </div>
-            <Button text="more about me" href="/about" />
-          </div>
+      <div className="flex flex-col flex-grow justify-center items-center gap-6">
+        <Image className="rounded-full" src="/avatar.jpg" alt="Avatar" width={102} height={102} />
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-4xl font-bold" >jessejes</h1>
+          <p className="text-base">Keep it simple :)</p>
         </div>
+        <Button text="more about me" href="/about" />
       </div>
     </>
   )
