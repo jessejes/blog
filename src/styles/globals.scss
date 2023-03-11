@@ -1,7 +1,7 @@
-@import 'vars.module.scss';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-// General styles
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,75 +9,6 @@
 }
 
 body {
-
     background-color: black;
-    color: $primary-color;
-
-    font-family: 'Inter';
-}
-
-.primary-button {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-
-    height: 64px;
-    width: 100%;
-
-    background: rgba(255, 255, 255, 0.2);
-    color: $primary-color;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.navbar {
-    
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 64px;
-    margin: 0 25px;
-
-    .navbar-items {
-
-        display: flex;
-        gap: 10px;
-
-        * {
-
-            color: $primary-color;
-
-            text-decoration: none;
-        }
-
-        .active {
-            text-decoration: underline;
-        }
-    }
-}
-
-.footer {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 64px;
-    width: 100%;
-
-    .footer-title, .footer-title * {
-        
-        color: $secondary-color;
-
-        font-weight: 600;
-        text-decoration: none;
-    }
+    color: white;
 }
