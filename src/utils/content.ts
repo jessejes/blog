@@ -15,7 +15,14 @@ function loadBlogsFromDirectory(): Blog[] {
         const file = fs.readFileSync(`${contentPath}/blogs/${fileName}`, 'utf-8');
         const readMatter = matter(file);
 
-        return { slug: slug, title: readMatter.data["title"], content: readMatter.content };
+        return { 
+            slug: slug, 
+            title: readMatter.data["title"], 
+            description: readMatter.data["description"], 
+            readingTime: readMatter.data["reading_time"],
+            date: readMatter.data["date"],
+            content: readMatter.content
+        };
     })
 }
 

@@ -1,5 +1,8 @@
 export default interface Blog {
-    slug: string;
-    title: string;
-    content: string;
+    slug: string,
+    title: string,
+    description: string,
+    readingTime: string,
+    date: string,
+    content: string,
 }
