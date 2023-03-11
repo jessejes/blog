@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>jessejes | Home</title>
+        <title>Home</title>
         <link rel="icon" href="/avatar.jpg" />
       </Head>
       <div className="flex flex-col flex-grow justify-center items-center gap-6">
