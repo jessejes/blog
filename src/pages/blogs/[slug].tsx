@@ -1,8 +1,10 @@
 import Blog from "@/types/blog";
 import { loadBlogsFromDirectory, loadSpecificBlog } from "@/utils/content";
+import { convertMarkdownToHTML } from "@/utils/markdown";
 import md from 'markdown-it';
 import Head from "next/head";
 import Link from "next/link";
+
 
 interface BlogPageProps {
     blog: Blog;
@@ -40,7 +42,9 @@ export default function BlogPage(props: BlogPageProps) {
                 </nav>
                 <div className="flex flex-col">
                     <h1 className="font-bold text-3xl">{props.blog.title}</h1>
-                    <div className="py-4" dangerouslySetInnerHTML={{ __html: md().render(props.blog.content) }} />
+                    <div className="py-4">
+                        {convertMarkdownToHTML(props.blog.content)}
+                    </div>
                 </div>
             </div>
         </>
