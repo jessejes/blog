@@ -34,8 +34,8 @@ export default function Blogs(props: BlogsProps) {
                     <Link key={blog.slug} href={`blogs/${blog.slug}`}>
                         <Card
                             header={blog.title}
-                            description="Lorem est tota propiore conpellat pectoribus de pectora summo..."
-                            footer="March 3, 2023 · 1 min"
+                            description={blog.description}
+                            footer={`${blog.date} · ${blog.readingTime} min`}
                         />
                     </Link>
                 ))}

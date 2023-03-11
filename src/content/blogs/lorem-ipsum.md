@@ -1,5 +1,8 @@
 ---
 title: "Lorem ipsum"
+description: "Lorem est tota propiore conpellat pectoribus de pectora summo"
+reading_time: 1
+date: "March 3, 2023"
 ---
 
 ## Lorem ipsum
