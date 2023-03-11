@@ -10,7 +10,7 @@ export default function Layout(props: LayoutProps) {
         <div className="flex flex-col min-h-screen mx-4">
             <Navbar />
             <div className="flex justify-center flex-grow">
-                <div className="max-w-lg">
+                <div className="flex justify-center flex-grow max-w-lg">
                     {props.children}
                 </div>
             </div>
