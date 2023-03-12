@@ -34,7 +34,7 @@ export default function BlogPage(props: BlogPageProps) {
                 <title>{props.blog.title}</title>
                 <link rel="icon" href="/avatar.jpg" />
             </Head>
-            <div className="flex flex-col justify-start items-start px-6 gap-1">
+            <div className="flex flex-col flex-grow justify-start items-start px-6 gap-1">
                 <nav className="inline-flex">
                     <Link className="text-xl text-white" href="/">Home</Link>
                     <div className="text-xl text-white px-1">»</div>
@@ -42,12 +42,11 @@ export default function BlogPage(props: BlogPageProps) {
                 </nav>
                 <div className="flex flex-col">
                     <h1 className="font-bold text-3xl">{props.blog.title}</h1>
-                    <div className="py-4">
+                    <div className="flex">
                         {convertMarkdownToHTML(props.blog.content)}
                     </div>
                 </div>
             </div>
         </>
-        
     )
 }

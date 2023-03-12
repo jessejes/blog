@@ -29,7 +29,9 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-
+```javascript
+    print("Hello world")
+```
 
 - Bullet list
     - Nested bullet
