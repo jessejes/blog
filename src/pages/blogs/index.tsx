@@ -1,6 +1,7 @@
 import Card from '@/components/card';
 import Blog from '@/types/blog';
 import { loadBlogsFromDirectory } from '@/utils/content';
+import generateRSS from '@/utils/rss';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Rss } from "react-feather"
@@ -10,6 +11,9 @@ export interface BlogsProps {
 }
 
 export async function getStaticProps() {
+
+    await generateRSS()
+
     return {
       props: {
             blogs: loadBlogsFromDirectory()
